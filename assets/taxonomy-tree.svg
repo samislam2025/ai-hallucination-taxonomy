@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" role="img" aria-label="Hallucination taxonomy tree">
+  <defs>
+    <linearGradient id="treebg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1220"/>
+      <stop offset="100%" stop-color="#141935"/>
+    </linearGradient>
+    <linearGradient id="root" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c5cff"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#treebg)"/>
+
+  <!-- Title -->
+  <text x="600" y="44" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#f5f7fb">
+    Hallucination Category Hierarchy
+  </text>
+  <text x="600" y="68" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8a93b8">
+    7 categories &#183; 26 documented failure modes
+  </text>
+
+  <!-- Root -->
+  <g transform="translate(500,100)">
+    <rect x="0" y="0" width="200" height="56" rx="10" fill="#1b2247" stroke="url(#root)" stroke-width="2"/>
+    <text x="100" y="28" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#f5f7fb">LLM HALLUCINATIONS</text>
+    <text x="100" y="46" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#a6b0cf">Root Taxonomy</text>
+  </g>
+
+  <!-- Connecting lines from root to categories -->
+  <g stroke-width="1.5" fill="none" opacity="0.55">
+    <path d="M600,156 C600,190 150,200 150,230" stroke="#7c5cff"/>
+    <path d="M600,156 C600,190 320,200 320,230" stroke="#22d3ee"/>
+    <path d="M600,156 C600,190 490,200 490,230" stroke="#34d399"/>
+    <path d="M600,156 C600,200 600,200 600,230" stroke="#f59e0b"/>
+    <path d="M600,156 C600,190 710,200 710,230" stroke="#ef4444"/>
+    <path d="M600,156 C600,190 880,200 880,230" stroke="#ec4899"/>
+    <path d="M600,156 C600,190 1050,200 1050,230" stroke="#14b8a6"/>
+  </g>
+
+  <!-- Category boxes -->
+  <g font-family="Helvetica, Arial, sans-serif">
+    <!-- Factual Fabrication -->
+    <g transform="translate(60,230)">
+      <rect width="180" height="56" rx="8" fill="#1b2247" stroke="#7c5cff" stroke-width="1.8"/>
+      <text x="90" y="24" text-anchor="middle" font-size="12" font-weight="700" fill="#f5f7fb">FACTUAL FABRICATION</text>
+      <text x="90" y="42" text-anchor="middle" font-size="10" fill="#a6b0cf">5 types &#183; Sev 3&#8211;5</text>
+    </g>
+    <g font-size="10" fill="#cdd5f0" transform="translate(60,300)">
+      <rect width="180" height="150" rx="6" fill="#121734" stroke="#7c5cff" stroke-opacity="0.3"/>
+      <text x="10" y="22">&#8226; Invented citations</text>
+      <text x="10" y="42">&#8226; Fake statistics</text>
+      <text x="10" y="62">&#8226; Nonexistent products</text>
+      <text x="10" y="82">&#8226; Fabricated events</text>
+      <text x="10" y="102">&#8226; Phantom APIs</text>
+    </g>
+
+    <!-- Confident Wrongness -->
+    <g transform="translate(244,230)">
+      <rect width="160" height="56" rx="8" fill="#1b2247" stroke="#22d3ee" stroke-width="1.8"/>
+      <text x="80" y="24" text-anchor="middle" font-size="12" font-weight="700" fill="#f5f7fb">CONFIDENT WRONGNESS</text>
+      <text x="80" y="42" text-anchor="middle" font-size="10" fill="#a6b0cf">4 types &#183; Sev 2&#8211;4</text>
+    </g>
+    <g font-size="10" fill="#cdd5f0" transform="translate(244,300)">
+      <rect width="160" height="150" rx="6" fill="#121734" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="10" y="22">&#8226; Math with conviction</text>
+      <text x="10" y="42">&#8226; Wrong code explained</text>
+      <text x="10" y="62">&#8226; Wrong dates as fact</text>
+      <text x="10" y="82">&#8226; Misattributed quotes</text>
+    </g>
+
+    <!-- Instruction Drift -->
+    <g transform="translate(408,230)">
+      <rect width="160" height="56" rx="8" fill="#1b2247" stroke="#34d399" stroke-width="1.8"/>
+      <text x="80" y="24" text-anchor="middle" font-size="12" font-weight="700" fill="#f5f7fb">INSTRUCTION DRIFT</text>
+      <text x="80" y="42" text-anchor="middle" font-size="10" fill="#a6b0cf">4 types &#183; Sev 1&#8211;3</text>
+    </g>
+    <g font-size="10" fill="#cdd5f0" transform="translate(408,300)">
+      <rect width="160" height="150" rx="6" fill="#121734" stroke="#34d399" stroke-opacity="0.3"/>
+      <text x="10" y="22">&#8226; Word limit violations</text>
+      <text x="10" y="42">&#8226; Format violations</text>
+      <text x="10" y="62">&#8226; Constraint amnesia</text>
+      <text x="10" y="82">&#8226; Role breaking</text>
+    </g>
+
+    <!-- Sycophantic Agreement -->
+    <g transform="translate(572,230)">
+      <rect width="160" height="56" rx="8" fill="#1b2247" stroke="#f59e0b" stroke-width="1.8"/>
+      <text x="80" y="24" text-anchor="middle" font-size="12" font-weight="700" fill="#f5f7fb">SYCOPHANTIC AGREEMENT</text>
+      <text x="80" y="42" text-anchor="middle" font-size="10" fill="#a6b0cf">4 types &#183; Sev 2&#8211;4</text>
+    </g>
+    <g font-size="10" fill="#cdd5f0" transform="translate(572,300)">
+      <rect width="160" height="150" rx="6" fill="#121734" stroke="#f59e0b" stroke-opacity="0.3"/>
+      <text x="10" y="22">&#8226; Wrong-premise agreement</text>
+      <text x="10" y="42">&#8226; Validating bad code</text>
+      <text x="10" y="62">&#8226; Inflating mediocre work</text>
+      <text x="10" y="82">&#8226; Reversing when pushed</text>
+    </g>
+
+    <!-- False Precision -->
+    <g transform="translate(736,230)">
+      <rect width="140" height="56" rx="8" fill="#1b2247" stroke="#ef4444" stroke-width="1.8"/>
+      <text x="70" y="24" text-anchor="middle" font-size="12" font-weight="700" fill="#f5f7fb">FALSE PRECISION</text>
+      <text x="70" y="42" text-anchor="middle" font-size="10" fill="#a6b0cf">3 types &#183; Sev 3&#8211;5</text>
+    </g>
+    <g font-size="10" fill="#cdd5f0" transform="translate(736,300)">
+      <rect width="140" height="150" rx="6" fill="#121734" stroke="#ef4444" stroke-opacity="0.3"/>
+      <text x="10" y="22">&#8226; Fake percentages</text>
+      <text x="10" y="42">&#8226; Invented timelines</text>
+      <text x="10" y="62">&#8226; Numbers from nowhere</text>
+    </g>
+
+    <!-- Context Contamination -->
+    <g transform="translate(880,230)">
+      <rect width="160" height="56" rx="8" fill="#1b2247" stroke="#ec4899" stroke-width="1.8"/>
+      <text x="80" y="24" text-anchor="middle" font-size="12" font-weight="700" fill="#f5f7fb">CONTEXT CONTAMINATION</text>
+      <text x="80" y="42" text-anchor="middle" font-size="10" fill="#a6b0cf">3 types &#183; Sev 2&#8211;4</text>
+    </g>
+    <g font-size="10" fill="#cdd5f0" transform="translate(880,300)">
+      <rect width="160" height="150" rx="6" fill="#121734" stroke="#ec4899" stroke-opacity="0.3"/>
+      <text x="10" y="22">&#8226; Mixing up entities</text>
+      <text x="10" y="42">&#8226; Blending topics</text>
+      <text x="10" y="62">&#8226; Conversation leakage</text>
+    </g>
+
+    <!-- Temporal Confusion -->
+    <g transform="translate(1044,230)">
+      <rect width="140" height="56" rx="8" fill="#1b2247" stroke="#14b8a6" stroke-width="1.8"/>
+      <text x="70" y="24" text-anchor="middle" font-size="12" font-weight="700" fill="#f5f7fb">TEMPORAL CONFUSION</text>
+      <text x="70" y="42" text-anchor="middle" font-size="10" fill="#a6b0cf">3 types &#183; Sev 2&#8211;4</text>
+    </g>
+    <g font-size="10" fill="#cdd5f0" transform="translate(1044,300)">
+      <rect width="140" height="150" rx="6" fill="#121734" stroke="#14b8a6" stroke-opacity="0.3"/>
+      <text x="10" y="22">&#8226; Stale info as current</text>
+      <text x="10" y="42">&#8226; Future events as past</text>
+      <text x="10" y="62">&#8226; Version confusion</text>
+    </g>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(60,510)" font-family="Helvetica, Arial, sans-serif">
+    <text x="0" y="0" font-size="13" font-weight="700" fill="#f5f7fb" letter-spacing="1">LEGEND</text>
+    <line x1="0" y1="10" x2="1080" y2="10" stroke="#2a3360" stroke-width="1"/>
+
+    <g transform="translate(0,32)" font-size="11" fill="#cdd5f0">
+      <rect x="0" y="-10" width="14" height="14" rx="3" fill="#7c5cff"/>
+      <text x="22" y="2">Factual Fabrication &#8212; invented facts that do not exist</text>
+
+      <rect x="0" y="14" width="14" height="14" rx="3" fill="#22d3ee"/>
+      <text x="22" y="26">Confident Wrongness &#8212; real topic, wrong answer, high confidence</text>
+
+      <rect x="0" y="38" width="14" height="14" rx="3" fill="#34d399"/>
+      <text x="22" y="50">Instruction Drift &#8212; ignoring or forgetting constraints</text>
+
+      <rect x="0" y="62" width="14" height="14" rx="3" fill="#f59e0b"/>
+      <text x="22" y="74">Sycophantic Agreement &#8212; capitulating to user framing or pressure</text>
+
+      <rect x="540" y="-10" width="14" height="14" rx="3" fill="#ef4444"/>
+      <text x="562" y="2">False Precision &#8212; plausible numbers with no source</text>
+
+      <rect x="540" y="14" width="14" height="14" rx="3" fill="#ec4899"/>
+      <text x="562" y="26">Context Contamination &#8212; cross-wiring entities or prior content</text>
+
+      <rect x="540" y="38" width="14" height="14" rx="3" fill="#14b8a6"/>
+      <text x="562" y="50">Temporal Confusion &#8212; out-of-date or time-scrambled output</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(60,700)" font-family="Helvetica, Arial, sans-serif" fill="#7c87a8" font-size="11">
+    <text x="0" y="0">Compiled from 400+ evaluation tasks across Claude, GPT, and Gemini.</text>
+    <text x="1080" y="0" text-anchor="end">github.com/samislam2025/ai-hallucination-taxonomy</text>
+  </g>
+</svg>

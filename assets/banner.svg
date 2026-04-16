@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="AI Hallucination Taxonomy banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="55%" stop-color="#131a2b"/>
+      <stop offset="100%" stop-color="#1a1040"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c5cff"/>
+      <stop offset="50%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+  <circle cx="950" cy="150" r="260" fill="url(#glow)"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="70" width="6" height="160" rx="3" fill="url(#accent)"/>
+
+  <!-- Title -->
+  <text x="90" y="130" font-family="Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#f5f7fb" letter-spacing="-1">
+    AI Hallucination Taxonomy
+  </text>
+  <text x="90" y="172" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#a6b0cf">
+    A Practitioner&apos;s Field Guide to LLM Failure Modes
+  </text>
+  <text x="90" y="212" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7c87a8" letter-spacing="2">
+    EVALUATION &#183; DETECTION &#183; MITIGATION
+  </text>
+
+  <!-- Right side node diagram -->
+  <g transform="translate(840,75)" font-family="Helvetica, Arial, sans-serif">
+    <line x1="150" y1="75" x2="40" y2="20" stroke="#7c5cff" stroke-opacity="0.6" stroke-width="1.5"/>
+    <line x1="150" y1="75" x2="40" y2="130" stroke="#22d3ee" stroke-opacity="0.6" stroke-width="1.5"/>
+    <line x1="150" y1="75" x2="260" y2="20" stroke="#34d399" stroke-opacity="0.6" stroke-width="1.5"/>
+    <line x1="150" y1="75" x2="260" y2="130" stroke="#f59e0b" stroke-opacity="0.6" stroke-width="1.5"/>
+    <line x1="150" y1="75" x2="150" y2="160" stroke="#ef4444" stroke-opacity="0.6" stroke-width="1.5"/>
+
+    <circle cx="150" cy="75" r="22" fill="#1b2544" stroke="url(#accent)" stroke-width="2"/>
+    <text x="150" y="80" text-anchor="middle" font-size="12" fill="#f5f7fb" font-weight="600">LLM</text>
+
+    <g font-size="11" fill="#cdd5f0">
+      <circle cx="40" cy="20" r="14" fill="#1b2544" stroke="#7c5cff" stroke-width="1.5"/>
+      <text x="40" y="24" text-anchor="middle">FAB</text>
+      <circle cx="40" cy="130" r="14" fill="#1b2544" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="40" y="134" text-anchor="middle">CTX</text>
+      <circle cx="260" cy="20" r="14" fill="#1b2544" stroke="#34d399" stroke-width="1.5"/>
+      <text x="260" y="24" text-anchor="middle">DFT</text>
+      <circle cx="260" cy="130" r="14" fill="#1b2544" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="260" y="134" text-anchor="middle">SYC</text>
+      <circle cx="150" cy="160" r="14" fill="#1b2544" stroke="#ef4444" stroke-width="1.5"/>
+      <text x="150" y="164" text-anchor="middle">TMP</text>
+    </g>
+  </g>
+
+  <!-- Severity dots -->
+  <g transform="translate(90,248)">
+    <circle cx="0" cy="0" r="6" fill="#22c55e"/>
+    <circle cx="22" cy="0" r="6" fill="#eab308"/>
+    <circle cx="44" cy="0" r="6" fill="#f97316"/>
+    <circle cx="66" cy="0" r="6" fill="#ef4444"/>
+    <circle cx="88" cy="0" r="6" fill="#991b1b"/>
+    <text x="108" y="4" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#7c87a8" letter-spacing="1">
+      SEVERITY 1 &#8594; 5
+    </text>
+  </g>
+</svg>

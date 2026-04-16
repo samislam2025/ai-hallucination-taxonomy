@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+
+# Python (scratch work)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (scratch work)
+node_modules/
+npm-debug.log*
+
+# Local notes
+scratch/
+notes.local.md
+*.tmp
