@@ -109,8 +109,9 @@ A consistent 1–5 scale sits behind every example. It is explained in full in [
       one incident at a time.<br/>
       <br/>
       &#9993; <a href="mailto:sayem@aisecondacts.com">sayem@aisecondacts.com</a><br/>
-      &#128279; <a href="https://www.linkedin.com/in/sayem-islam/">LinkedIn</a><br/>
-      &#127760; <a href="https://aisecondacts.com">aisecondacts.com</a>
+      &#128279; <a href="https://www.linkedin.com/in/sayemmislam">LinkedIn</a><br/>
+      &#127760; <a href="https://mysecondact.io/">mysecondact.io</a><br/>
+      &#127760; <a href="https://aicareerhubs.co/">aicareerhubs.co</a>
     </td>
   </tr>
 </table>
